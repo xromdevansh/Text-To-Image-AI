@@ -20,14 +20,14 @@ To run the program locally, follow these steps:
 2. **Install CUDA** (if you have an NVIDIA GPU):
    - Follow the instructions on the [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) page to install CUDA.
 
-3. **Install PyTorch**:
-   - Install PyTorch by following the instructions on the [PyTorch website](https://pytorch.org/get-started/locally/). Make sure to select the appropriate options for your system.
-
-4. **Create and Activate a Virtual Environment**:
+3. **Create and Activate a Virtual Environment**:
    ```bash
    python -m venv myenv
    source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
    ```
+
+4. **Install PyTorch**:
+   - Install PyTorch by following the instructions on the [PyTorch website](https://pytorch.org/get-started/locally/). Make sure to select the appropriate options for your system.
 
 5. **Install Requirements**:
    - Clone this repository and navigate to the directory:
