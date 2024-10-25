@@ -25,11 +25,8 @@ To run the program locally, follow these steps:
    python -m venv myenv
    source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
    ```
-
-4. **Install PyTorch**:
-   - Install PyTorch by following the instructions on the [PyTorch website](https://pytorch.org/get-started/locally/). Make sure to select the appropriate options for your system.
-
-5. **Install Requirements**:
+   
+4. **Install Requirements**:
    - Clone this repository and navigate to the directory:
      ```bash
      git clone <repository-url>
@@ -39,6 +36,8 @@ To run the program locally, follow these steps:
      ```bash
      pip install -r requirements.txt
      ```
+5. **Install PyTorch**:
+   - Install PyTorch by following the instructions on the [PyTorch website](https://pytorch.org/get-started/locally/). Make sure to select the appropriate options for your system.
 
 6. **Create a Hugging Face Account**:
    - Go to [Hugging Face](https://huggingface.co/) and create an account.
