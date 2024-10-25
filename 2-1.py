@@ -2,10 +2,10 @@ import torch
 from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 
 small_model = "stabilityai/stable-diffusion-2-1"
-large_model = "stabilityai/stable-diffusion-3.5-large"
 
 pipe = StableDiffusionPipeline.from_pretrained(small_model, torch_dtype=torch.bfloat16)
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
+pipe.enable_attention_slicing()
 pipe = pipe.to("cuda")
 
 prompts = [
