@@ -1,3 +1,6 @@
-env/
-3.5/
-2.1/
+venv/
+__pycache__/
+*.pyc
+*.png
+json/
+images.json
