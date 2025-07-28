@@ -51,10 +51,9 @@ def load_model():
     pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
     pipe.enable_attention_slicing()
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    pipe = pipe.to(torch.device(device), torch.float32)
+    pipe = pipe.to("cpu", torch.float32)
     return pipe
-
+set_custom_style()
 pipe = load_model()
 
 # Streamlit UI
